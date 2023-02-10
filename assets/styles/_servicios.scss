@@ -1,0 +1,51 @@
+.servicios{
+    .lista-servicios{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        .unservicio{
+            width: calc(33.33% - 10px);
+            background-color: #f3f6f9;
+            border-radius: 5px;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: center;
+            h3{
+                font: 22px/28px "Rubik";
+                color: #74c5da;
+                margin-bottom: 20px;
+            }
+            p{
+                font: 16px/22px 'Josefin Sans', sans-serif;
+                color: #241600;
+            }
+            img{
+                margin-top: 30px;
+                width: auto;
+                height: 90px;
+            }
+            span{
+                width: 96px;
+                height: 8px;
+                background-color: rgba(0, 0, 0, 0.06);
+                border-radius: 100%;
+                display: block;
+                margin: 15px auto 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .servicios{
+        .lista-servicios{
+            display: block;
+            .unservicio{
+                margin: 10px auto;
+                max-width: 330px;
+                width: 100%;
+            }
+        }
+    }
+}

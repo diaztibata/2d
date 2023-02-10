@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+//font-family: 'Montserrat', sans-serif;
+
+.contenedor{
+    width: 100%;
+    .contenedor-1200{
+        max-width: 1200px;
+        width: calc(100% - 30px);
+        margin: 0 auto;
+        padding: 80px 0;
+    }
+    .titulo-seccion{
+        font: 24px/30px "Rubik";
+        color: #74c5da;
+        text-align: center;
+    }
+    .mini-titulo{
+        font: 10px/12px "Rubik";
+        color: #100028;
+        text-align: center;
+        text-align: center;
+    }
+}
+
+@import "header";
+@import "servicios";
+@import "acercade";
+@import "portafolio";
+@import "modal";
+@import "preguntas";

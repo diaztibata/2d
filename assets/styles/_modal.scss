@@ -1,0 +1,46 @@
+.modal-detalle{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    top: 0;
+    z-index: 99;
+    display: none;
+    .cerrar{
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        width: 40px;
+        height: auto;
+        border: unset;
+        background-color: transparent;
+        font: 35px/35px 'Play';
+    }
+    .detalle-trabajo{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .galeria{
+            width: calc(50% - 10px);
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .texto-untrabajo{
+            width: calc(50% - 10px);
+            .texto-intro{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-bottom: 20px;
+                .item{
+                    width: calc(50% - 5px);
+                }
+            }
+            .descripcion{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
