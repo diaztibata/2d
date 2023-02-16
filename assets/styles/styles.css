@@ -21,6 +21,9 @@
   color: #74c5da;
   text-align: center;
 }
+.contenedor .textos {
+  width: calc(50% - 10px);
+}
 .contenedor .mini-titulo {
   font: 10px/12px "Rubik";
   color: #100028;

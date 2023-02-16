@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+main{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+body{
+    background-color: #f7f4f4;
+}
+
+p{
+    color: #232121;
+}
+
+section{
+    min-height: 100vh;
+    scroll-snap-align: start;
+    .titulo{
+        background-color: #394150;
+        padding: 30px 20px;
+        color: #f7f4f4;
+        h3{
+            text-transform: capitalize;
+            font: 25px/33px "Rubik";
+        }
+    }
+    .contenido{
+        margin: 20px 15px;
+        width: calc(100% - 30px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6vh;
+        .texto{
+            width: calc(50% - 10px);
+            p{
+                margin-top: 10px;
+            }
+        }
+        .img-texto{
+            width: calc(50% - 10px);
+            text-align: center;
+            img{
+                width: 100%;
+                height: auto;
+                max-width: 450px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.colores{
+    position: relative;
+    .modal{
+        max-width: 300px;
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        right: 30px;
+        background-color: rgba(255, 255, 255, 0.91);
+        padding: 30px;
+        z-index: 9;
+    }
+    .contenido{
+        margin: 0;
+        height: calc(100vh - 93px);
+        width: 100%;
+        div{
+            width: 20%;
+            height: 100%;
+            position: relative;
+            span{
+                background-color: #fff;
+                display: inline-block;
+                padding: 10px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        .violeta{
+            background-color: #242042;
+        }
+        .carmesi{
+            background-color: #BB0A21;
+        }
+        .amarillo{
+            background-color: #FBAF00;
+        }
+        .verde{
+            background-color: #23D15D;
+        }
+        .azul{
+            background-color: #C7EDE4;
+        }
+    }
+}
+
+.cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    h2{
+        color: #09162f;
+        font: 60px/68px "Rubik";
+    }
+    p{
+        max-width: 800px;
+        margin: 20px auto;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.concepto{
+    .contenido{
+        .img-texto{
+            display: flex;
+            img{
+                width: 50%;
+                height: auto;
+            }
+        }
+    }
+}
